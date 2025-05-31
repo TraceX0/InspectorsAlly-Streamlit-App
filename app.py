@@ -198,4 +198,3 @@ if submit_button:
     else:
         st.warning("Please upload an image or take a picture to analyze.")
 
-```
