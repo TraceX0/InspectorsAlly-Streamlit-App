@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image # For image manipulation
 import numpy as np    # For numerical operations
 import io             # For handling file uploads
-import cv2            # For OpenCV, used for camera input (bonus)
+#import cv2            # For OpenCV, used for camera input (bonus)
 
 st.set_page_config(page_title="InspectorsAlly - Bolt Quality Check", page_icon=":wrench:")
 
