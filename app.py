@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 import numpy as np
 import io
-import cv2 # Re-enabled for camera input
+
 
 # IMPORTANT ASSUMPTION:
 # This code assumes that './model/keras_model.h5' is actually a PyTorch model's
