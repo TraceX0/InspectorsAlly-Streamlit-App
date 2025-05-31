@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 import numpy as np
 import io
-import cv2 # Re-enabled for camera input
+
 
 # --- Streamlit Page Configuration and Title (MUST BE FIRST STREAMLIT COMMANDS) ---
 st.set_page_config(page_title="InspectorsAlly - Bolt Quality Check", page_icon=":wrench:")
