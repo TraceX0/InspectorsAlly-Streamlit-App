@@ -6,6 +6,13 @@ import numpy as np
 import io
 
 
+# --- Streamlit Page Configuration and Title (MUST BE FIRST STREAMLIT COMMANDS) ---
+st.set_page_config(page_title="InspectorsAlly - Bolt Quality Check", page_icon=":wrench:")
+
+st.title("InspectorsAlly - Bolt Quality Control")
+st.caption("Boost Your Quality Control with AI-Powered Bolt Inspection")
+st.write("Upload an image of a bolt or use your camera to classify it as Good / Anomaly.")
+
 # IMPORTANT ASSUMPTION:
 # This code assumes that './model/keras_model.h5' is actually a PyTorch model's
 # state_dict saved with a .h5 extension, and that the model architecture
@@ -45,13 +52,6 @@ except ImportError:
             x = self.classifier(x)
             return x
 
-
-# --- Streamlit Page Configuration and Title ---
-st.set_page_config(page_title="InspectorsAlly - Bolt Quality Check", page_icon=":wrench:")
-
-st.title("InspectorsAlly - Bolt Quality Control")
-st.caption("Boost Your Quality Control with AI-Powered Bolt Inspection")
-st.write("Upload an image of a bolt or use your camera to classify it as Good / Anomaly.")
 
 # --- Model Loading and Class Names ---
 # Define the device to run the model on (CPU or GPU if available)
@@ -197,4 +197,3 @@ if submit_button:
         st.write("---")
     else:
         st.warning("Please upload an image or take a picture to analyze.")
-
