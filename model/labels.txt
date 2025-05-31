@@ -1,0 +1,5 @@
+0 Normal_Bolt
+1 Bent_Bolt
+2 Rusted_Bolt
+3 Stripped_Head_Bolt
+4 Damaged_Thread_Bolt
